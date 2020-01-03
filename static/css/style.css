@@ -1,6 +1,81 @@
+html {
+    font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(6px + 6 * ((25vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 425px) {
+    html {
+        font-size: calc(8px + 6 * ((25vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 760px) {
+    html {
+        font-size: calc(12px + 6 * ((25vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 body{
     background-color: antiquewhite;
 }
 #logo{
     height: 100px;
+}
+.quote_btn{
+    background-color: #49ab81;
+    border-color: #49ab81;
+}
+.quote_btn:hover, .quote_btn:not(:disabled):not(.disabled):active, .quote_btn:focus{
+    background-color: #2a875f;
+    border-color: #2a875f;
+    color: azure;
+}
+.nav_link{
+    font-size: 1.3em;
+}
+.get_quote{
+    color: azure;
+}
+.get_quote:hover{
+    color: azure;
+    text-decoration: none;
+}
+.topbar{
+    color: azure;
+    background-color: #49ab81;
+    border-color: #2a875f;
+    border-radius: 0;
+    height: 50%;
+}
+.divide{
+    border-top: 2px solid;
+}
+.banner{
+    background-image: url("/static/img/banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.banner_text{
+    font-size: 1.3rem;
+    position: absolute;
+    top:5%;
+    left: 5%;
+}
+.banner_text h1, .banner_text h4, .banner_text p{
+    background: #faebd780;
+    color: #2a875f;
+}
+.big_font{
+    font-size: 2rem;
+}
+.green_text{
+    color: #2a875f;
 }

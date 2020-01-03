@@ -7,41 +7,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <title>{%block title%}{%endblock title%}</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img id="logo" src="/static/img/new_logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mt-auto" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              {%if active_page == 'page.home'%}
-              <span class="sr-only">(current)</span>
-              {%endif%}
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services
-              {%if active_page == 'page.services'%}
-              <span class="sr-only">(current)</span>
-              {%endif%}
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+    <div class="alert topbar m-0 text-center" role="alert">
+      <span class=""><i class="fas fa-phone-alt"></i> Call Us: 780-888-8888</span>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0 m-0" href="#"><img id="logo" src="/static/img/new_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse m-auto" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto nav_link">
+            <li class="nav-item active">
+              <a class="nav-link mr-3" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-3" href="#">Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary quote_btn"><a class="get_quote" href="#">GET A FREE QUOTE</a></button>
+        </div>
       </div>
     </nav>
-
+    <hr class="my-0 ">
     {%block content%}
     {%endblock content%}
 
