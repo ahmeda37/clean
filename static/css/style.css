@@ -1,4 +1,4 @@
-html {
+html, body {
     font-size: 16px;
     height: 100%;
 }
@@ -53,7 +53,7 @@ body{
     background-color: #49ab81;
     border-color: #2a875f;
     border-radius: 0;
-    height: 50%;
+    height: 10%;
 }
 .divide{
     border-top: 2px solid;
@@ -94,5 +94,8 @@ body{
 }
 .footer{
     background: azure;
-    height: 50%;
+    height: 10%;
+}
+.push{
+    padding-top: 2%;
 }
