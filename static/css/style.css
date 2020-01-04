@@ -1,5 +1,6 @@
 html {
     font-size: 16px;
+    height: 100%;
 }
 @media screen and (min-width: 320px) {
     html {
@@ -73,9 +74,25 @@ body{
     background: #faebd780;
     color: #2a875f;
 }
+.bigger_font{
+    font-size: 3rem;
+}
 .big_font{
     font-size: 2rem;
 }
+.mid_font{
+    font-size: 1.5rem;
+}
 .green_text{
     color: #2a875f;
+}
+.vertical_divider{
+    border-right: 1px solid #2a875f;
+}
+.card_back{
+    background: azure;
+}
+.footer{
+    background: azure;
+    height: 50%;
 }
