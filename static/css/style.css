@@ -24,10 +24,13 @@ html, body {
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+}
+.bg-light{
+    background: whitesmoke;
 }
 #logo{
-    height: 100px;
+    height: 4rem;
 }
 .quote_btn{
     background-color: #49ab81;
@@ -39,7 +42,7 @@ body{
     color: azure;
 }
 .nav_link{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .get_quote{
     color: azure;
@@ -47,13 +50,6 @@ body{
 .get_quote:hover{
     color: azure;
     text-decoration: none;
-}
-.topbar{
-    color: azure;
-    background-color: #49ab81;
-    border-color: #2a875f;
-    border-radius: 0;
-    height: 10%;
 }
 .divide{
     border-top: 2px solid;
@@ -83,19 +79,45 @@ body{
 .mid_font{
     font-size: 1.5rem;
 }
+.small_font{
+    font-size: 1.25rem;
+}
+.xsmall-font{
+    font-size: 0.75rem;
+}
 .green_text{
     color: #2a875f;
 }
 .vertical_divider{
     border-right: 1px solid #2a875f;
 }
-.card_back{
+.card_back {
     background: azure;
 }
-.footer{
-    background: azure;
-    height: 10%;
+#page-container {
+    position: relative;
 }
-.push{
-    padding-top: 2%;
+
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+    background: #c5c5c5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+}
+#topbar{
+    color: azure;
+    background: #2a875f;
+    top: 0;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0;
+    margin: 0;
+}
+#bottom-bar {
+    background: gainsboro;
 }

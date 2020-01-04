@@ -12,8 +12,9 @@
     <title>{%block title%}{%endblock title%}</title>
   </head>
   <body>
-    <div class="alert topbar m-0 text-center big_font" role="alert">
-      <span class=""><i class="fas fa-phone-alt"></i> Call Us: 780-888-8888</span>
+  <div id="page-container">
+    <div id="topbar" class="text-center small_font">
+      <p style="padding-top: 0.5rem"><i class="fas fa-phone-alt"></i> Call Us: 780-888-8888</p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
       <div class="container-fluid">
@@ -41,14 +42,33 @@
       </div>
     </nav>
     <hr class="my-0 ">
-    {%block content%}
-    {%endblock content%}
+    <div id="content-wrap">
+      {%block content%}
+      {%endblock content%}
 
-    <div class="footer">
-      <p class="text-center big_font" style="padding-top: 0px">
-        Copyright <i class="far fa-copyright"></i> 2019 - All Rights Reserved - Kingdom Clean Commercial Janitorial Services
+      <div id="bottom-bar">
+        <div class="row">
+          <div class="col big_font text-center">
+            <img style="height: 10rem" src="/static/img/new_logo.png">
+          </div>
+          <div class="col text-center">
+              <h4 class="green_text" style="margin-top: 2rem">Payment Methods</h4>
+              <img style="height: 5rem" src="/static/img/payment.png">
+          </div>
+          <div class="col text-center green_text">
+            <h4 style="margin-top: 2rem">Connect With Us</h4>
+            <i class="fab fa-facebook-square bigger_font"></i>
+            <i class="fab fa-twitter-square bigger_font"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p class="text-center small_font mb-0" style="padding-top: 0.5rem">
+        Copyright <i class="far fa-copyright xsmall-font"></i> 2019 - All Rights Reserved - Kingdom Clean Commercial Janitorial Services
       </p>
     </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
