@@ -13,5 +13,9 @@ def sevices():
     return render_template("services.html")
 
 
+@app.route("/contact", methods=["GET"])
+def contact():
+    return render_template("contact.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
