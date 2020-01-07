@@ -27,5 +27,9 @@ def contact():
     return render_template("contact.html", mymap=mymap)
 
 
+@app.route("/quote", methods=["GET"])
+def quote():
+    return render_template("quote.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
