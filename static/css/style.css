@@ -30,9 +30,9 @@ body{
 .bg-light{
     background: whitesmoke;
 }
-#logo{
-    height: 4rem;
-}
+/*#logo{*/
+/*    height: 4rem;*/
+/*}*/
 .quote_btn{
     background-color: #49ab81;
     border-color: #49ab81;
@@ -62,7 +62,7 @@ body{
     height: 100%;
 }
 .banner_text{
-    font-size: 1.3rem;
+    /*font-size: 1.3rem;*/
     position: absolute;
     top:5%;
     left: 5%;
@@ -74,18 +74,18 @@ body{
 .bigger_font{
     font-size: 3rem;
 }
-.big_font{
-    font-size: 2rem;
-}
-.mid_font{
-    font-size: 1.5rem;
-}
-.small_font{
-    font-size: 1.25rem;
-}
-.xsmall-font{
-    font-size: 0.75rem;
-}
+/*.big_font{*/
+/*    font-size: 2rem;*/
+/*}*/
+/*.mid_font{*/
+/*    font-size: 1.5rem;*/
+/*}*/
+/*.small_font{*/
+/*    font-size: 1.25rem;*/
+/*}*/
+/*.xsmall-font{*/
+/*    font-size: 0.75rem;*/
+/*}*/
 .green_text{
     color: #2a875f;
 }
