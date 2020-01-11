@@ -1,2 +1,7 @@
 /venv
 /secret.py
+/clean.ini
+/clean.sock
+/cleanenv
+/error.log
+/wsgi.py
